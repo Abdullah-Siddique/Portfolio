@@ -1,0 +1,91 @@
+/* frontend/src/styles/styles.css */
+
+/* Global styles */
+
+
+body {
+  background-image: url('https://cdn.leonardo.ai/users/12adf5be-8e70-4be7-82b2-f6a279f24f70/generations/edf6d2fa-9ef5-4619-a575-3004c1106174/Leonardo_Diffusion_XL_draw_a_picture_for_my_homepage_of_my_web_1.jpg');
+  background-size: cover;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Add these styles to your existing CSS file */
+.contact-container {
+  text-align: center;
+  margin-top: 50px; /* Adjust the margin as needed */
+}
+
+.contact-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.contact-list li {
+  margin-bottom: 10px; /* Adjust the spacing between items as needed */
+}
+
+.contact-list li a {
+  font-size: 24px; /* Increase the font size as desired */
+}
+.text-box {
+  color: white;
+}
+
+/* Header styles */
+.header {
+  text-align: center;
+  padding: 20px;
+}
+
+/* Menu styles */
+.menu {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.menu-items {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+}
+
+.menu-item {
+  margin: 0 10px;
+  font-size: 20px; /* Adjust the font size as needed */
+  border: 2px solid #fff;
+  padding: 10px 15px;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.3); /* Background color for the menu items */
+}
+.center {
+  text-align: center;
+
+}
+.menu-item a {
+  text-decoration: none;
+  color: #fff; /* Link color */
+}
+/* Add this to your existing CSS file */
+.photon {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #fff;
+  opacity: 0;
+  animation: cometAnimation 4s infinite;
+}
+
+@keyframes cometAnimation {
+  0% {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(200px, -200px);
+    opacity: 0;
+  }
+}
+

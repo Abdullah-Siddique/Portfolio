@@ -1,0 +1,52 @@
+/* Add your CSS styles here */
+.container {
+  width: 300px; /* Adjust width as needed */
+  height: 400px; /* Adjust height as needed */
+  perspective: 1000px;
+}
+
+.card {
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.8s;
+  background-image: url('https://cdn.leonardo.ai/users/12adf5be-8e70-4be7-82b2-f6a279f24f70/generations/0512177b-e95c-43cc-9dcb-b450cc957209/Leonardo_Diffusion_XL_Give_me_an_image_for_a_background_the_im_0.jpg?w=512');
+  background-size: cover;
+  border: 5px solid black; /* Add black border */
+  box-sizing: border-box; /* Include border in the element's total width and height */
+}
+
+.container:hover .card {
+  transform: rotateY(180deg);
+}
+
+.front,
+.back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  color: white; /* Set text color to white for better visibility on the background image */
+}
+
+.back {
+  transform: rotateY(180deg);
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Add this to your existing CSS file or component */
+.social-icon {
+  width: 50px; /* Adjust the width as needed */
+  height: 50px; /* Adjust the height as needed */
+  margin-right: 5px; /* Adjust the margin between icon and text as needed */
+}
+
